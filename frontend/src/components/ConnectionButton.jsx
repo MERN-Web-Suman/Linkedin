@@ -9,7 +9,7 @@ import { useEffect } from 'react'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-const socket = io("http://localhost:8000")
+const socket = io("https://linkedin-eacd.onrender.com")
 
 export default function ConnectionButton({userId}) {
     let {serverUrl} = useContext(authDataContext)

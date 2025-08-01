@@ -20,7 +20,7 @@ let server = http.createServer(app) // create a socket io server
 
  export const io = new Server(server,{  // setup websocket io
     cors:({
-    origin:"https://linkedin-frontend-7d80.onrender.com",
+    origin:"http://localhost:5173",
     credentials:true
 })
 })
@@ -28,7 +28,7 @@ let server = http.createServer(app) // create a socket io server
 app.use(express.json());
 app.use(cookieParser())
 app.use(cors({
-    origin:"https://linkedin-frontend-7d80.onrender.com",
+    origin:"http://localhost:5173",
     credentials:true
 }))
 
